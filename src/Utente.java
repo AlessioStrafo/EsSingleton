@@ -3,11 +3,10 @@ public class Utente {
     private String nome;
     private int eta;
 
-    private Utente() {
-    }
+    private Utente() {}
     public static Utente getIntance() {
         if (instance == null) {
-            Utente instance = new Utente();
+            instance = new Utente();
             instance.setNome("Mario");
             instance.setEta(22);
         }
@@ -27,7 +26,7 @@ public class Utente {
     }
     @Override
     public String toString() {
-        return "Utente{" +
+        return "{" +
                 "nome='" + nome + '\'' +
                 ", eta=" + eta +
                 '}';

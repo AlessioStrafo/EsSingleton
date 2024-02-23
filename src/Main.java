@@ -9,8 +9,11 @@ public class Main {
 
         Utente utente1 = Utente.getIntance();
         Utente utente2 = Utente.getIntance();
-        System.out.println(utente1);
-        System.out.println(utente2);
+        System.out.println("Utente 1= " + utente1);
+        System.out.println("Utente 2= " + utente2);
+        utente2.setNome("Gino");
+        utente2.setEta(37);
+        System.out.println("Utente 2 modificato= " + utente2);
 
     }
 }
